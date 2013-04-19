@@ -1,5 +1,6 @@
 module Suika.Types where
 
+import System.IO
 import Control.Monad.State
 import Data.ByteString
 import Network

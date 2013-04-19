@@ -5,7 +5,7 @@ import Suika.Types
 -- | IRC client configuration, just for debugging
 config = [
     Server {
-        name     = "Esper",
+        servname = "Esper",
         server   = "irc.esper.net",
         port     = 6667,
         password = "",
@@ -13,11 +13,12 @@ config = [
         nicks    = ["Allie_", "Allie__"],
         username = "Allie",
         realname = "Allie",
+        socket   = Nothing,
         buffers  = []
     },
 
     Server {
-        name     = "Freenode",
+        servname = "Freenode",
         server   = "irc.freenode.net",
         port     = 6667,
         password = "",
@@ -25,11 +26,12 @@ config = [
         nicks    = ["Allie_", "Allie__"],
         username = "Allie",
         realname = "Allie",
+        socket   = Nothing,
         buffers  = []
     },
 
     Server {
-        name     = "OFTC",
+        servname = "OFTC",
         server   = "irc.oftc.net",
         port     = 6667,
         password = "",
@@ -37,6 +39,8 @@ config = [
         nicks    = ["Allie_", "Allie__"],
         username = "Allie",
         realname = "Allie",
+        socket   = Nothing,
         buffers  = []
     }
-]
+    ]
+

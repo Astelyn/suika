@@ -1,7 +1,8 @@
-module Suika.Main where
+module Main where
 
 import Suika.Types
 import Suika.Config
+import Suika.Net
 
 -- | Create an initial state
 initIRC :: IRCState
@@ -11,4 +12,8 @@ initIRC = IRCState {
 }
 
 main :: IO ()
-main = print "poni"
+main = do
+    let s = initIRC
+        r = servers s
+    connect $ r!!0
+    print "poni"
