@@ -18,7 +18,7 @@ data Server = Server {
 }
 
 data Buffer = Buffer {
-    channame :: String,
+    bufname  :: String,
     activity :: Int,
     mention  :: Bool,
     buf      :: ByteString
