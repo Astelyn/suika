@@ -16,9 +16,10 @@ data Server = Server {
     realname :: String,
     socket   :: Maybe Handle,
     buffers  :: [Buffer]
-}
+} deriving (Eq)
 
 data Buffer = Buffer {
+    parent   :: Server,
     bufname  :: String,
     activity :: Int,
     mention  :: Bool,
@@ -30,5 +31,5 @@ data IRCState = IRCState {
     current :: Maybe Buffer
 }
 
-type IRC a = State IRCState a
+type IRC a = StateT IRCState IO a
 
