@@ -5,7 +5,7 @@ name:                suika
 version:             0.1.0.0
 synopsis:            Small IRC client
 -- description:         
-license:             WTFPL
+license:             OtherLicense
 license-file:        LICENSE
 author:              Astelyn & erkin
 -- maintainer:          
@@ -18,4 +18,4 @@ executable suika
   main-is:             main.hs
   hs-source-dirs:      src
   other-modules:       Suika.Types, Suika.Config, Suika.Net
-  build-depends:       base ==4.5.*, network, bytestring, mtl
+  build-depends:       base ==4.5.*, network, bytestring, mtl, text
