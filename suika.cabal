@@ -4,12 +4,12 @@
 name:                suika
 version:             0.1.0.0
 synopsis:            Small IRC client
--- description:         
+-- description:
 license:             OtherLicense
-license-file:        LICENSE
-author:              Astelyn & erkin
--- maintainer:          
--- copyright:           
+license-file:        LICENCE
+author:              Allie & Erkin Batu Altunbaş
+-- maintainer:
+-- copyright:
 category:            Network
 build-type:          Simple
 cabal-version:       >=1.8
